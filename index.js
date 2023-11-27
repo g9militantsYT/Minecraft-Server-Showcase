@@ -9,8 +9,7 @@ const mainBot = new Client({
   intents: [
     Intents.FLAGS.GUILDS,
     Intents.FLAGS.GUILD_MESSAGES,
-    Intents.FLAGS.MESSAGE_CONTENT,
-  ],
+  ],  
 });
 
 const mainCommands = [];
@@ -30,7 +29,7 @@ const mainRest = new REST({ version: '9' }).setToken(process.env.BOT_TOKEN);
     await mainRest.put(
       Routes.applicationGuildCommands(process.env.CLIENT_ID, process.env.GUILD_ID),
       { body: mainCommands },
-    );
+    );  
 
     console.log('Successfully reloaded application (/) commands.');
   } catch (error) {
