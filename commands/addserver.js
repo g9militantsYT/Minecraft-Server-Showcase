@@ -39,11 +39,11 @@ module.exports = {
       const embed = new MessageEmbed()
         .setTitle('Server Information')
         .setDescription('Server information added successfully!')
-        .setFooter('Embernodes', 'attachment://embernodes.png')
+        .setFooter('Dime Hosting', 'attachment://dimehost.png')
         .setColor('BLUE'); // Set color to blue
 
       // Send the embed along with the image
-      await interaction.reply({ embeds: [embed], files: ['./embernodes.png'] });
+      await interaction.reply({ embeds: [embed], files: ['./dimehost.png'] });
     } catch (error) {
       console.error(`Error adding server information for user ${userId}: ${error}`);
       await interaction.reply('There was an error while adding server information.');

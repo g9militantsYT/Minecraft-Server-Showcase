@@ -17,8 +17,8 @@ module.exports = {
         { name: '/whitelistedips', value: '> Obtain a list of currently whitelisted IPs that can be showcased' },
       )
       .setColor('#3498db') // Set the color to a shade of blue
-      .setFooter('Embernodes', 'attachment://embernodes.png'); // Set footer text and icon
+      .setFooter('Dime Hosting', 'attachment://dimehost.png'); // Set footer text and icon
 
-    await interaction.reply({ embeds: [embed], files: ['./embernodes.png'] });
+    await interaction.reply({ embeds: [embed], files: ['./dimehost.png'] });
   },
 };
